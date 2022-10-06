@@ -1,0 +1,11 @@
+{
+	"extends": ["fast-lint-prettify"],
+	"rules": {
+		// your own rules here
+	},
+	"env": {
+		// generally you only need one
+		// "browser": true,
+		// "node": true
+	}
+}
