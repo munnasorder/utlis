@@ -1,17 +1,17 @@
 const { isArray, isFunction, isObject } = require('../src/helpers/is');
+const avg = require('../src/methods/avg');
 
 const sum = require('../src/methods/sum');
 
 Array.prototype.sumCalculate = sum;
+Array.prototype.avg = avg;
 
 const result = [
 	{
-		name: 'sum',
 		value: 100,
 	},
 	{
-		name: 'sum',
-		value: 150,
+		value: 200,
 	},
-].sumCalculate((v) => v.value);
+].avg((item) => item.value);
 console.log(result);
