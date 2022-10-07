@@ -10,7 +10,6 @@ module.exports = function chunk (n) {
 
     const result = [];
     let index = 0;
-    // const totalChunkSize = Math.floor(n / array.length);
 
     if (isArray(array)) {
         do {
